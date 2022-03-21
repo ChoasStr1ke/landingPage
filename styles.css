@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    background-color: #787878;
+
+    font-family: "Raleway", sans-serif;
+    padding: 0px;
+}
+
+.wrapper{
+    padding-top: 57px;
+    align-items: flex-start;
+    height: 170px;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: visible;
+}
+
+.header-links{
+    margin-left: 6vw;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+
+    display: flex;
+    flex: 1;
+
+}
+
+.header-links ul{
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+
+    color: #787878;
+    line-height: 1.7;
+}
+
+.header-links ul li{
+    color: #787878;
+}
+
+.header-links a{
+    border-color: #d4bc7c;
+    display: flex;
+
+    justify-content: space-around;
+
+    border: 1px solid #d4bc7c;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.menu-btn{
+    content: "";
+    display: block;
+    cursor: pointer;
+
+    margin: 0;
+    border: 0;
+    line-height: 1;
+    list-style-position: inside;
+    outline: 0;
+    font-size: 100%;
+
+    padding-right: 10px;
+    padding-top: 5px;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.menu-icon{
+    align-content: space-between;
+    display: flex;
+
+    flex-wrap: wrap;
+    height: 13px;
+    position: static;
+    width: 19px;
+}
+
+.menu-icon span{
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+
+    background-color: white;
+}
+
+#span3{
+    width: 80%;
+}
+
+#head2{
+    justify-content: flex-end;
+    display: flex;
+    
+}
+
+.header-links li{
+    display: inline-block;
+    vertical-align: top;
+
+    list-style: none;
+    list-style-position: inside;
+
+    color: #787878;
+}
+
+.header-logo{
+    width: 20%;
+}
+
+.logo img{
+    display: inline-block;
+    background-repeat: no-repeat;
+
+    overflow: visible;
+    height: 214px;
+    position: relative;
+    top: -10px;
+    z-index: 999;
+    width: 229px;
+}
+
+.container-right{
+    margin-right: 5vw;
+}
+
+.giftBox{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+
+    outline: none;
+}
+
+.giftBox a{
+    padding: 18px 40px;
+    border: none;
+}
+
+.book a{    
+    display: inline-block;
+    background-color: #d4bc7c;
+    border: 1px solid #d4bc7c;
+    color: white;
+    margin: 0;
+    padding: 18px 40px 16px;    
+    font-family: 'Raleway',sans-serif;
+
+}
+
+.sidebar{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    left: -400px;
+    opacity: 0.7;
+    background-color: darkgrey;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.sidebar ul li{
+    list-style: none;
+    display: block;
+    padding: 15px 15px;
+    margin-right: 40px;
+}
+
+.sidebar ul li:hover{
+    background-color: white;
+}
+
+.closeButton{
+    display: block;
+    border
+}
+
+.closeButton div{ 
+    width: 24px;
+    height: 1px;
+    margin: auto;
+    background-color: black;
+}
+
+
+.closeButton > div:first-child{
+    -moz-transform: rotate(45deg);
+}
+
+.closeButton > div:last-child{
+    -moz-transform: rotate(-45deg);
+}
+
+#xButton:hover{
+    background-color: darkgrey;
+}
+
+.slider{
+    position: relative;
+    margin: auto;
+
+    width: 100vw;
+    height: 100vh;
+    transition: 2s ease-in-out;
+
+    background-image: url("/images/greenFields.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.images{
+    display: none;
+}
+
+.fade{
+    -moz-animation-name: fade;
+    -moz-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    margin-top: -22px;
+    padding: 2.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+  @-moz-keyframes fade {
+    from{opacity: .4}
+    to {opacity: 1;}
+  }
+
+  @keyframes fade{
+      from{opacity: .4}
+      to {opacity: 1}
+  }
+
